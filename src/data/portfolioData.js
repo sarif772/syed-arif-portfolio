@@ -13,20 +13,21 @@ export const personalInfo = {
     "NLP & Computer Vision Enthusiast",
     "AI Researcher",
   ],
-  tagline:
-    "Final-year BS Artificial Intelligence student building practical AI systems for healthcare, agriculture and intelligent web applications.",
-  bio: "Final-year BS Artificial Intelligence student at The Islamia University of Bahawalpur (CGPA 3.50/4.00) with hands-on experience in Generative AI, LLMs, RAG, Agentic AI, NLP, Computer Vision and Machine Learning. Built practical AI systems for agriculture, healthcare, conversational assistance and intelligent web applications. Research interests: generative and agentic AI, intelligent decision-making, multilingual and multimodal AI, responsible AI. Aims to pursue graduate research on AI agents capable of reasoning, planning, tool use and autonomous task execution for real-world applications.",
+  tagline: "",
+  bio: "BS Artificial Intelligence student at The Islamia University of Bahawalpur (CGPA 3.50/4.00) with hands-on experience in Generative AI, LLMs, RAG, Agentic AI, NLP, Computer Vision and Machine Learning. Built practical AI systems for agriculture, healthcare, conversational assistance and intelligent web applications. Research interests: generative and agentic AI, intelligent decision-making, multilingual and multimodal AI, responsible AI. Aims to pursue graduate research on AI agents capable of reasoning, planning, tool use and autonomous task execution for real-world applications.",
   location: "Skardu, Gilgit-Baltistan, Pakistan",
   email: "sarifhussaini772@gmail.com",
+  phone: "03489926960",
+  phoneFormatted: "+92 348 9926960",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/syed-arif-hussain-942748305",
     github: "https://github.com/syedarifhussain",
     email: "mailto:sarifhussaini772@gmail.com",
+    phone: "tel:03489926960",
   },
   cvUrl: "/Syed_Arif_Hussain_CV.pdf",
   profileImage: profileImg,
   stats: [
-    { label: "Academic CGPA", value: "3.50", sub: "/4.00", icon: "GraduationCap" },
     { label: "AI & Full-Stack Projects", value: "6", sub: "+", icon: "Code2" },
     { label: "Research Paper", value: "1", sub: "Under Review", icon: "FileText" },
     { label: "Industry Certified", value: "Pearson", sub: "VUE Python", icon: "Award" },
@@ -451,6 +452,5 @@ export const navLinks = [
   { name: "Certifications", href: "#certifications" },
   { name: "Training", href: "#training" },
   { name: "Conferences", href: "#conferences" },
-  { name: "Languages", href: "#languages" },
   { name: "Contact", href: "#contact" },
 ];

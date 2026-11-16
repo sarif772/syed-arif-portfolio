@@ -11,6 +11,7 @@ import {
   MessageSquare,
   Sparkles,
   ShieldCheck,
+  Phone,
 } from 'lucide-react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { personalInfo } from '../data/portfolioData';
@@ -160,6 +161,23 @@ const Contact = () => {
                     <span className="text-xs font-mono text-slate-400 uppercase">LinkedIn Profile</span>
                     <p className="text-sm font-semibold text-slate-100 group-hover:text-cyan-300 transition-colors flex items-center gap-1.5">
                       <span>syed-arif-hussain</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </p>
+                  </div>
+                </a>
+
+                {/* Phone / WhatsApp Item */}
+                <a
+                  href={`tel:${personalInfo.phone}`}
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-700/60 hover:border-cyan-400/50 group transition-all"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500/15 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <div className="overflow-hidden">
+                    <span className="text-xs font-mono text-slate-400 uppercase">Phone & WhatsApp</span>
+                    <p className="text-sm font-semibold text-slate-100 group-hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+                      <span>{personalInfo.phoneFormatted || personalInfo.phone}</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </p>
                   </div>

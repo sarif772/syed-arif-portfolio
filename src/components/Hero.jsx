@@ -48,9 +48,8 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-400/30 text-cyan-300 text-xs sm:text-sm font-mono tracking-wide mb-6 shadow-glow-sm"
+              className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-400/30 text-cyan-300 text-xs sm:text-sm font-mono tracking-wide mb-6 shadow-glow-sm"
             >
-              <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
               <span>BS AI Researcher &bull; Graduate School Applicant</span>
             </motion.div>
 
@@ -63,7 +62,7 @@ const Hero = () => {
             </h1>
 
             {/* Animated Typing Roles */}
-            <div className="h-10 sm:h-12 flex items-center mb-6">
+            <div className="h-10 sm:h-12 flex items-center mb-8">
               <span className="font-mono text-lg sm:text-2xl text-slate-300 dark:text-slate-300 font-semibold">
                 Specializing in{' '}
                 <span className="text-cyan-400 dark:text-cyan-300 border-b-2 border-cyan-400/60 pb-0.5">
@@ -72,11 +71,6 @@ const Hero = () => {
                 <span className="typing-cursor" />
               </span>
             </div>
-
-            {/* Tagline */}
-            <p className="text-base sm:text-lg text-slate-400 dark:text-slate-300 max-w-2xl leading-relaxed mb-8">
-              {personalInfo.tagline}
-            </p>
 
             {/* Call To Action Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10 w-full sm:w-auto">
@@ -187,7 +181,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 sm:mt-12"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 sm:mt-12"
         >
           {personalInfo.stats.map((stat, i) => {
             const IconComponent = statIcons[stat.icon] || Sparkles;

@@ -44,17 +44,6 @@ const Navbar = () => {
             href="#"
             className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg p-1"
           >
-            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-violet-600 p-[1px] shadow-glow-sm group-hover:shadow-glow-md transition-shadow">
-              <div className="w-full h-full bg-[#050714] rounded-[11px] flex items-center justify-center">
-                <span className="font-heading font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400 text-sm tracking-wider">
-                  AH
-                </span>
-              </div>
-              {/* Pulsing indicator */}
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping opacity-75" />
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]" />
-            </div>
-
             <div className="flex flex-col">
               <span className="font-heading font-bold text-sm sm:text-base text-slate-100 dark:text-white tracking-tight group-hover:text-cyan-300 transition-colors">
                 Syed Arif Hussain

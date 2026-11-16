@@ -14,7 +14,6 @@ import Skills from './components/Skills';
 import Certifications from './components/Certifications';
 import Training from './components/Training';
 import Conferences from './components/Conferences';
-import Languages from './components/Languages';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -99,7 +98,6 @@ function App() {
           <Certifications />
           <Training />
           <Conferences />
-          <Languages />
           <Contact />
         </main>
 

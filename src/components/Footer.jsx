@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowUp, Terminal, Lock } from 'lucide-react';
-import { navLinks } from '../data/portfolioData';
+import { ArrowUp, Terminal, Lock, Phone, Mail } from 'lucide-react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { personalInfo, navLinks } from '../data/portfolioData';
 
 const Footer = ({ onOpenAdmin }) => {
   const scrollToTop = () => {
@@ -23,6 +24,41 @@ const Footer = ({ onOpenAdmin }) => {
               <Terminal className="w-3.5 h-3.5" />
               <span>BS Artificial Intelligence &bull; Generative & Agentic AI</span>
             </p>
+            {/* Quick Contact & Social Links */}
+            <div className="flex items-center gap-3 mt-3">
+              <a
+                href={personalInfo.socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300 hover:border-cyan-500/40 transition-colors"
+                title="LinkedIn Profile"
+              >
+                <FaLinkedin className="w-4 h-4" />
+              </a>
+              <a
+                href={`tel:${personalInfo.phone}`}
+                className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-colors"
+                title={`Call/WhatsApp: ${personalInfo.phone}`}
+              >
+                <Phone className="w-4 h-4" />
+              </a>
+              <a
+                href={`mailto:${personalInfo.email}`}
+                className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300 hover:border-cyan-500/40 transition-colors"
+                title={`Email: ${personalInfo.email}`}
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+              <a
+                href={personalInfo.socialLinks.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300 hover:border-cyan-500/40 transition-colors"
+                title="GitHub"
+              >
+                <FaGithub className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
