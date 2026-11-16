@@ -3,6 +3,8 @@
  * Edit this single file to update any information across the entire website.
  */
 
+import profileImg from '../assets/profile.jpg';
+
 export const personalInfo = {
   name: "Syed Arif Hussain",
   typingRoles: [
@@ -22,7 +24,7 @@ export const personalInfo = {
     email: "mailto:sarifhussaini772@gmail.com",
   },
   cvUrl: "/Syed_Arif_Hussain_CV.pdf",
-  profileImage: "/assets/profile.jpg",
+  profileImage: profileImg,
   stats: [
     { label: "Academic CGPA", value: "3.50", sub: "/4.00", icon: "GraduationCap" },
     { label: "AI & Full-Stack Projects", value: "6", sub: "+", icon: "Code2" },

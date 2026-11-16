@@ -178,19 +178,6 @@ const Hero = () => {
                   className="w-full h-full object-cover object-[center_15%] rounded-full filter contrast-105 brightness-105 hover:scale-105 transition-transform duration-700"
                 />
               </div>
-
-              {/* Floating Verified AI Researcher Badge */}
-              <div className="absolute bottom-5 sm:bottom-6 left-0 right-0 flex justify-center z-30 pointer-events-none">
-                <motion.div
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                  className="pointer-events-auto whitespace-nowrap bg-[#070e24]/95 border border-cyan-400/60 rounded-full px-3.5 py-1.5 backdrop-blur-md shadow-[0_4px_25px_rgba(0,240,255,0.45)] flex items-center gap-2 text-[11px] sm:text-xs font-mono text-cyan-300"
-                >
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                  <span>Open for MS/PhD & AI Roles</span>
-                </motion.div>
-              </div>
             </div>
           </motion.div>
         </div>
